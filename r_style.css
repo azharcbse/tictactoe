@@ -1,0 +1,219 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:900);
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+  width: 100%;
+  height: 100%;
+}
+body{
+  font-family: 'Roboto', sans-serif;
+  background: #607d8b !important;
+}
+#navbars{
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+.nav-block{
+    background: #212529;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 0 10px 11px darkslategrey;
+}
+.user-div{
+    display: flex;
+}
+.user{
+    margin-left: 15px;
+    margin-top: 24px;
+    font-size: 40px;
+    font-weight: 600;
+}
+.user{       
+text-align: center;
+color: #fff;
+font-size: 2.5rem;
+animation: O 1s ease-in-out infinite alternate;
+}
+
+@keyframes O {
+    from {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #0073e6, 0 0 20px #0073e6, 0 0 25px #0073e6, 0 0 30px #0073e6, 0 0 35px #0073e6;
+    }
+    to {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #0073e6, 0 0 40px #0073e6, 0 0 50px #0073e6, 0 0 60px #0073e6, 0 0 70px #0073e6;
+    }
+}
+.buttons{
+    padding: 15px;
+    margin:10px 20px;
+    margin-left: 40px;
+}
+.btns{
+    outline: none;
+    margin-right: 20px;
+    width: 140px;
+    height: 50px;
+    line-height: 40px;
+    color: white;
+    text-transform: uppercase;
+    font-size: 20px;
+    border-radius: 50px;
+    letter-spacing: 4px;
+    text-decoration: none;
+    cursor: pointer;
+    border: 2px solid white;
+    transition: all 0.1s ;
+    box-shadow: inset 0 0 50px #fff, inset 20px 0 60px violet, inset -20px 0 60px blue, inset 20px 0 300px violet, inset -20px 0 300px blue, 0 0 50px #fff, -10px 0 60px violet, 10px 0 60px blue;
+}
+.btns:hover{
+    color: blue;
+    background-color: #2196f3;
+    box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
+}
+#body-section{
+    background: #607d8b;
+    padding-bottom: 50px;
+}
+.headings{
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    width: 100%;
+    margin-top: -20px;
+}
+.headings h1{
+    font-size: 4rem;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    align-items: center;
+}
+.glow{
+    font-size: 80px;
+    color: #fff;
+    text-align: center;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+  }
+  
+@keyframes glow{
+    from{
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+    to{
+      text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+}
+.table{
+    border-collapse: collapse;
+  border-radius: 1em;
+  overflow: hidden;
+  background: darkseagreen;
+  box-shadow: 0 0 10px 11px;
+}
+td{
+    color: darkblue;
+}
+#logo{
+    width: 6rem;
+}
+#para{
+  margin-left: 10px;
+  padding: 5px;
+  background: #000;
+  color: white;
+  width: 150px;
+}
+@media (max-width: 1000px){
+    .user{
+        font-size: 2rem;
+    }
+    #logo{
+        width: 5rem;
+        height: 5rem;
+    }
+    .btns{
+        width: 110px;
+        height: 40px;
+        line-height: 0;
+        font-size: 15px;
+    }
+}
+@media (max-width: 800px){
+    .user {
+        font-size: 1.5rem;
+    }
+    #logo {
+        width: 4rem;
+        height: 4rem;
+    }
+    .btns {
+        width: 100px;
+        height: 30px;
+        font-size: 12px;
+    }
+    .headings h1{
+        font-size: 3.4rem;
+    }
+}
+@media (max-width: 700px){
+    #logo{
+        display: none;
+    }
+    .user {
+        font-size: 1.2rem;
+    }
+    .buttons {
+        padding: 14px 0 0 0;
+        margin: 0;
+        margin-left: 0;
+    }
+    .btns {
+        width: 75px;
+        height: 25px;
+        font-size: 10px;
+    }
+    .headings h1 {
+        font-size: 2.4rem;
+    }
+}
+@media (max-width: 450px){
+    .user{
+        font-size: 1rem;
+    }
+    .btns {
+        width: 50px;
+        height: 25px;
+        font-size: 0.3rem;
+        margin: 0;
+    }
+    .headings h1 {
+        font-size: 2rem;
+    }
+    th,td{
+        font-size: 10px;
+    }
+}
+@media (max-width: 350px){
+    .btns {
+        width: 46px;
+        height: 20px;
+        font-size: 5px;
+    }
+    #para{
+    font-size: 8px;
+    width: 75px;
+  }
+    .headings h1 {
+        font-size: 1.5rem;
+    }
+    th,td{
+        font-size: 8px;
+    }
+}

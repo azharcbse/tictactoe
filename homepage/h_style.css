@@ -1,0 +1,271 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    background-image: url('./phil-botha-a0TJ3hy-UD8-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#navbars{
+      box-shadow: 1px 9px 7px 0px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 1px 9px 7px 0px rgba(0,0,0,0.20);
+  -moz-box-shadow: 1px 9px 7px 0px rgba(0,0,0,0.20);
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      width: 100%;
+  }
+  .nav-block{
+      display: flex;
+      justify-content: space-between;
+      background: #212529;
+    box-shadow: 0 0 12px 10px darkslategrey;
+  }
+  .user-div{
+      display: flex;
+  }
+  
+  .user{   
+    margin-left: 15px;
+    margin-top: 24px;
+    font-size: 40px;
+    font-weight: 600;    
+  }
+  
+  .user {
+    text-align: center;
+color: #fff;
+font-size: 2.5rem;
+animation: O 1s ease-in-out infinite alternate;
+  }
+  
+@keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+  }
+
+  .btns {
+    outline: none;
+ margin-right: 20px;
+    width: 140px;
+    height: 50px;
+    line-height: 40px;
+    color: white;
+    text-transform: uppercase;
+    font-size: 20px;
+    border-radius: 50px;
+    letter-spacing: 4px;
+    text-decoration: none;
+    cursor: pointer;
+    border: 2px solid white;
+    transition: all 0.1s ;
+    box-shadow: inset 0 0 50px #fff, inset 20px 0 60px violet, inset -20px 0 60px blue, inset 20px 0 300px violet, inset -20px 0 300px blue, 0 0 50px #fff, -10px 0 60px violet, 10px 0 60px blue;
+    }
+    @keyframes O {
+        from {
+        text-shadow: 0 0 5px #0073e6, 0 0 10px #0073e6, 0 0 15px #0073e6, 0 0 20px #0073e6, 0 0 25px #0073e6, 0 0 30px #0073e6, 0 0 35px #0073e6;
+        }
+        to {
+        text-shadow: 0 0 10px #0073e6, 0 0 20px #0073e6, 0 0 30px #0073e6, 0 0 40px #0073e6, 0 0 50px #0073e6, 0 0 60px #0073e6, 0 0 70px #0073e6;
+        }
+        }
+    .btns:hover
+    {
+        color: blue;
+        background-color: #2196f3;
+        box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
+    }
+.home
+{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+ 
+}
+.circles
+{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%; 
+}
+.circle
+{
+    border-radius: 50%; 
+}
+.circle img
+{
+    background: url('./tic.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 26rem;
+    box-shadow: 0 0 10px 11px;
+}
+
+.heading
+{
+    color: aqua;
+    border-radius: 30px;
+    padding: 10px;
+    font-size: 45px;
+    box-shadow: inset 0 0 50px #fff, inset 20px 0 60px violet, inset -20px 0 60px blue, inset 20px 0 300px violet, inset -20px 0 300px blue, 0 0 50px #fff, -10px 0 60px violet, 10px 0 60px blue;
+}
+.buttons
+{
+    margin-top: 20px;
+}
+.btn1,.btn2
+{
+    position: relative;
+    width: 320px;
+    height: 50px;
+    line-height: 40px;
+    background: black;
+    color: white;
+    text-transform: uppercase;
+    font-size: 18px;
+    border-radius: 50px;
+    letter-spacing: 4px;
+    text-decoration: none;
+    cursor: pointer;
+    border: 2px solid white;
+}
+button:hover
+{
+    color: #255784;
+  background: #2196f3;
+  box-shadow: 0 0 10px  #2196f3, 0 0 40px  #2196f3, 0 0 80px  #2196f3;
+  transition-delay: .1s;
+}
+#logo{
+    width: 6rem;
+  }
+#para{
+  margin-left: 10px;
+  padding: 5px;
+  background: #000;
+  color: white;
+  width: 150px;
+}
+@media (max-width: 900px){
+  #logo{
+    display: none;
+  }
+  .user{
+    font-size: 2rem;
+  }
+  .btns{
+    width: 120px;
+    height: 35px;
+    line-height: 0;
+    font-size: 12px;
+  }
+  .heading{
+    font-size: 35px;
+  }
+  .nav-block{
+    padding-bottom: 20px;
+  }
+}
+@media (max-width: 700px){
+  #logo{
+    width: 3rem;
+  }
+  .user{
+    font-size: 1.4rem;
+  }
+  .btns{
+    width: 95px;
+    height: 25px;
+    font-size: 10px;
+  }
+  .heading{
+    font-size: 25px;
+  }
+  .nav-block{
+    padding-bottom: 20px;
+  }
+  .btn1,.btn2{
+    width: 240px;
+    font-size: 13px;
+  }
+}
+@media (max-width: 550px){
+  .circle img{
+    width: 18rem;
+  }
+  .heading{
+    font-size: 20px;
+  }
+  .btns {
+    width: 80px;
+    margin: 0;
+  }
+  .btn1, .btn2 {
+    width: 200px;
+    font-size: 10px;
+    height: 40px;
+  }
+}
+@media (max-width: 450px){
+  .user {
+    font-size: 1.1rem;
+  }
+  .btns {
+    width: 50px;
+    letter-spacing: 0;
+    font-size: 8px;
+    height: 20px;
+  }
+  .heading{
+    font-size: 15px;
+  }
+  .btn1, .btn2 {
+    width: 145px;
+    line-height: 0;
+    height: 30px;
+    letter-spacing: 1px;
+  }
+}
+@media (max-width: 350px){
+  .user{
+    font-size: 1rem;
+  }
+  .btns{
+    width: 45px;
+    font-size: 7px;
+    height: 16px;
+  }
+  .heading{
+    font-size: 10px;
+  }
+  #para{
+    font-size: 8px;
+    width: 75px;
+  }
+  .nav-block {
+    padding-bottom: 4px;
+  }
+  .circle img{
+    width: 10rem;
+  }
+  .btn1,.btn2{
+    letter-spacing: 0;
+    font-size: 8px;
+    width: 100px;
+    height: 25px;
+  }
+}
